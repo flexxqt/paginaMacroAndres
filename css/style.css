@@ -6,10 +6,15 @@
     font-family: 'modern-Age' , 'modern-Age';
     src: url(./fuente/modern-age.ttf);
 }
+text, h1, h2, h3, h4, h5, h6, p,li, ul, a {
+    margin: 0;
+    padding: 0;
+    color: black !important;
+}
 body ,html {
     width: 100%;
     height: 100vh;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(245, 240, 186);
     overflow: hidden;
     padding: 0;
     margin: 0;
@@ -42,7 +47,8 @@ body ,html {
     width: 90%;
     height: 150px;
     display: flex;
-    align-items: center;    
+    align-items: center;
+    align-content: space-around;
     justify-content: center;
     font-family: 'saudagar' , sans-serif;
     flex-direction: column;
@@ -55,7 +61,7 @@ body ,html {
     color: #ffffff;
     margin: 0;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 2px rgba(132, 252, 3, 0.5);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 #subtlt {
     font-size: 19px;
@@ -63,28 +69,46 @@ body ,html {
     margin: 1px;
     color: white;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 1px rgba(132, 252, 3, 0.5);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 #redes {
     justify-content: space-around;
+    align-content: start;
     display: flex;
-    width: 130px;
+    flex-direction: column;
+    width: 300px;
     height: 100px;
 }
-#redes img {
+#perfil {
+    color: white;
+    font-size: 20px;
+    align-content: center;
+    font-style: bold;
+}
+.redes-logos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+.red-social img{
     width: 30px;
-    height: 30px;
-    margin: 3px;
-    border-radius: 5px;
+    height: auto
+}
+.red-social {
+    display: flex;
+    align-items: center;  
+    gap: 10px;
 }
 .nav {
     width: auto;
     height: 40px;
     padding: 10px;
     margin-top: 69px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 20px;
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
 }
 .nav ul {
     display: flex;
@@ -98,6 +122,7 @@ body ,html {
 .nav li {
     font-size: 30px;
     font-family: 'saudagar' , sans-serif;
+    letter-spacing: 2px;
 }
 .nav a {
     color: white;
@@ -109,11 +134,4 @@ body ,html {
     background-color: white;
     border-radius: 5px;
     padding: 5px;
-}
-
-.fotosNav {
-
-}
-.footer {
-
 }
