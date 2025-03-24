@@ -1,0 +1,31 @@
+img: [
+	{
+		'id' . '001'
+		'nombre': 'Rana en Hoja'
+		'descripcion' : 'En el reino de lo invisible, esta rana se desliza como un fantasma dorado sobre la piel suave del tiempo. Sus ojos brillan con un fuego interno, mientras sus patas delicadas parecen tejidas de luz y sombra. Es un ser etéreo que camina entre dos mundos, donde la vida y la transparencia se funden en armonía'
+		'url' : 'C:\Users\ASUS\Documents\Andres\proyectos personales\pagina\img\fotos\001.jpg'
+
+		'id' . '002'
+		'nombre': 'Ranas hermanas'
+		'descripcion' : 'Pareja de ranas abrazando en los días fríos'
+		'url' : 'C:\Users\ASUS\Documents\Andres\proyectos personales\pagina\img\fotos\002.jpg'
+
+		'id' . '003'
+		'nombre': 'baile de apareamiento'
+		'descripcion' : 'En la vida las saltarinas son las mas coquetas del reino animal, los machos para atraer a sus pareja hacen una danza cortejo bastante llamativo para que las hembras permiten la reproducción'
+		'url' : 'C:\Users\ASUS\Documents\Andres\proyectos personales\pagina\img\fotos\003.jpg'
+
+		'id' . '004'
+		'nombre': 'antenas'
+		'descripcion' : 'Mis antenitas de vilin detectan al enemigo'
+		'url' : 'C:\Users\ASUS\Documents\Andres\proyectos personales\pagina\img\fotos\004.jpg'
+
+		'id' . '005'
+		'nombre': 'Saltarina espejo'
+		'descripcion' : 'La armonía de la vida'
+		'url' : 'C:\Users\ASUS\Documents\Andres\proyectos personales\pagina\img\fotos\001.jpg'
+	}
+
+]
+
+

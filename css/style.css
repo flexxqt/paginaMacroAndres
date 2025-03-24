@@ -132,3 +132,11 @@ body ,html {
     border-radius: 5px;
     padding: 5px;
 }
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
