@@ -25,12 +25,14 @@ body ,html {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 .header {
     width: 100%;
     height: 120px;
     display: flex;
-    justify-content: space-around;
+    align-content: space-around;
 }
 .logo { 
     height: 160px;
@@ -58,80 +60,75 @@ body ,html {
 #nombre {
     font-size: 49px;
     font-weight: bold;
-    color: #ffffff;
     margin: 0;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 #subtlt {
     font-size: 19px;
     font-family: 'morern-Age' , sans-serif;
-    margin: 1px;
-    color: white;
     letter-spacing: 2px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 #redes {
-    justify-content: space-around;
-    align-content: start;
     display: flex;
     flex-direction: column;
     width: 300px;
     height: 100px;
+    margin-top: 10px;
 }
 #perfil {
-    color: white;
     font-size: 20px;
     align-content: center;
     font-style: bold;
+    letter-spacing: 2px;
 }
 .redes-logos {
     display: flex;
     align-items: center;
+    width: 18rem;
     gap: 10px;
     padding: 10px;
     justify-content: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 .red-social img{
-    width: 30px;
+    width: 1em;
     height: auto
 }
 .red-social {
     display: flex;
     align-items: center;  
-    gap: 10px;
+    justify-content: center;
+    margin: 0;
 }
 .nav {
     width: auto;
     height: 40px;
-    padding: 10px;
-    margin-top: 69px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border: 1px solid rgb(0, 0, 0);
+    margin-top: 40px;
 }
 .nav ul {
     display: flex;
-    gap: 20px;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
+    margin: 15px;
+    padding: 1px;
+    border: 0.1px solid rgb(0, 0, 0);
 }
 .nav li {
-    font-size: 30px;
+    display: flex;
+    font-size: 1.2rem;
     font-family: 'saudagar' , sans-serif;
     letter-spacing: 2px;
+    flex-grow: 2;
+    justify-content: center;
 }
 .nav a {
-    color: white;
     text-decoration: none;
     font-weight: bold;
 }
 .nav a:hover {
     color: black;
-    background-color: white;
+    background-color: rgba(238, 230, 3, 0.225);
     border-radius: 5px;
     padding: 5px;
 }
