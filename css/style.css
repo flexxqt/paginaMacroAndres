@@ -6,6 +6,17 @@
     font-family: 'modern-Age' , 'modern-Age';
     src: url(./fuente/modern-age.ttf);
 }
+/* @keyframes slide {
+    0% { transform: translateX(0%); }
+    20% { transform: translateX(0%); }  
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); } 
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); } 
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); } 
+    100% { transform: translateX(-400%); } 
+} */
 text, h1, h2, h3, h4, h5, h6, p,li, ul, a {
     margin: 0;
     padding: 0;
@@ -19,6 +30,8 @@ body ,html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow: auto;
+
 }
 .contenedor {
     width: 100%;
@@ -105,7 +118,7 @@ body ,html {
 .nav {
     width: auto;
     height: 40px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 .nav ul {
     display: flex;
@@ -132,11 +145,28 @@ body ,html {
     border-radius: 5px;
     padding: 5px;
 }
-#galeria {
+
+.carrusel {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 40px;    
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
+.carrusel-contenedor {
+    width: 100%;
+    animation: slide 10s infinite; 
+}
+.carrusel-imagneses {
+    width: 100%;
+}
+.carrusel-item img {
+    width: 95%;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+
