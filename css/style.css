@@ -6,17 +6,10 @@
     font-family: 'modern-Age' , 'modern-Age';
     src: url(./fuente/modern-age.ttf);
 }
-/* @keyframes slide {
-    0% { transform: translateX(0%); }
-    20% { transform: translateX(0%); }  
-    25% { transform: translateX(-100%); }
-    45% { transform: translateX(-100%); } 
-    50% { transform: translateX(-200%); }
-    70% { transform: translateX(-200%); } 
-    75% { transform: translateX(-300%); }
-    95% { transform: translateX(-300%); } 
-    100% { transform: translateX(-400%); } 
-} */
+@keyframes cambio-foto {
+    0% , 100% {opacity: 0; }
+    10%, 90% {opacity: 1; }
+}
 text, h1, h2, h3, h4, h5, h6, p,li, ul, a {
     margin: 0;
     padding: 0;
@@ -36,10 +29,11 @@ body ,html {
 .contenedor {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
 }
 .header {
     width: 100%;
@@ -116,16 +110,19 @@ body ,html {
     margin: 0;
 }
 .nav {
-    width: auto;
+    width: 98%;
     height: 40px;
     margin-top: 50px;
 }
 .nav ul {
     display: flex;
     list-style: none;
+    align-content: space-evenly;
     margin: 15px;
     padding: 1px;
     border: 0.1px solid rgb(0, 0, 0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
 .nav li {
     display: flex;
@@ -145,28 +142,36 @@ body ,html {
     border-radius: 5px;
     padding: 5px;
 }
-
 .carrusel {
     position: relative;
-    width: 100%;
+    width: 96%;
     border-radius: 10px;
     margin-top: 40px;    
-    display: flex;
-    justify-content: center;
-    align-items: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 .carrusel-contenedor {
-    width: 100%;
-    animation: slide 10s infinite; 
+    width: 97%;
 }
 .carrusel-imagneses {
     width: 100%;
 }
 .carrusel-item img {
-    width: 95%;
-    margin: 30px;
+    width: 100%;
+    margin: 20px;
     border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    animation: cambio-foto 1s infinite; 
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
-
+.carrusel-item img:nth-child(1) {
+    animation: cambio-foto 9s infinite;
+}
+.carrusel-item img:nth-child(2) {
+    animation: cambio-foto 3s infinite;
+}
+.carrusel-item img:nth-child(3) {
+    animation: cambio-foto 6s infinite;
+}
 
