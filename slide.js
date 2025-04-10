@@ -6,4 +6,4 @@ function fotoSiguiente() {
     contador = (contador + 1) % slides.length;
     slides[contador].classList.add('active');
 }
-setInterval(fotoSiguiente, 8000); 
+setInterval(fotoSiguiente, 5000); 
